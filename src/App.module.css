@@ -1,0 +1,22 @@
+.app {
+	display: grid;
+	grid-template-columns: 50% 24px 50%;
+	grid-template-rows: 1fr;
+	width: 100vw;
+	height: 100vh;
+	transition: 0.5s;
+}
+
+.app[data-option='red'] {
+	transition: 0.5s;
+	grid-template-columns: 100% 0 0;
+}
+
+.app[data-option='blue'] {
+	transition: 0.5s;
+	grid-template-columns: 0 0 100%;
+}
+
+.app.red .divisor {
+	opacity: 0;
+}

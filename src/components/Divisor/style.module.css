@@ -1,0 +1,24 @@
+.divisor {
+	position: relative;
+	background: var(--dark);
+}
+
+.divisor .box {
+	background: var(--dark);
+	color: var(--white);
+	font-size: 120px;
+	position: absolute;
+	top: 50%;
+	right: auto;
+	transform: translate(-45%, -50%);
+	line-height: 1;
+	padding: 32px;
+	padding-bottom: 16px;
+	border-radius: 24px;
+}
+
+.divisor[data-option='red'] .box,
+.divisor[data-option='blue'] .box {
+	transition: 0.2s;
+	opacity: 0;
+}

@@ -1,0 +1,39 @@
+.option {
+	display: grid;
+	place-items: center;
+	transition: background 0.1s;
+	text-align: center;
+}
+
+.option span {
+	max-width: 14ch;
+	font-size: 4rem;
+	color: var(--white);
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.1;
+}
+
+.option[color='red'],
+.option[color='red'][data-option='red']:hover {
+	background: var(--red);
+}
+
+.option[color='red']:hover {
+	background: var(--light-red);
+}
+
+.option[color='blue'],
+.option[color='blue'][data-option='blue']:hover {
+	background: var(--blue);
+}
+
+.option[color='blue']:hover {
+	background: var(--light-blue);
+}
+
+.option[color='red'][data-option='blue'] span,
+.option[color='blue'][data-option='red'] span {
+	transition: 0.2s;
+	color: transparent;
+}

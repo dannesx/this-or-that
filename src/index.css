@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600&display=swap');
+
+:root {
+	--blue: hsl(206, 83%, 50%);
+	--light-blue: hsl(206, 83%, 62%);
+	--red: hsl(353, 74%, 50%);
+	--light-red: hsl(353, 74%, 62%);
+	--dark: #2f253e;
+	--white: #fafafa;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Teko';
+	user-select: none;
+}
+
+html {
+	overflow-x: hidden;
+}

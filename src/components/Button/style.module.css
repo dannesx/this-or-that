@@ -1,0 +1,26 @@
+.button {
+	padding: 10px 24px;
+	border: none;
+	border-radius: 6px;
+	color: var(--white);
+	font-size: 24px;
+	line-height: 1;
+	transition: background 0.1s;
+	cursor: pointer;
+}
+
+.button[color='red'] {
+	background: var(--red);
+}
+
+.button[color='red']:hover {
+	background: var(--light-red);
+}
+
+.button[color='blue'] {
+	background: var(--blue);
+}
+
+.button[color='blue']:hover {
+	background: var(--light-blue);
+}

@@ -1,0 +1,26 @@
+.results {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	display: grid;
+	place-items: center;
+	background: #000000aa;
+	transition: opacity 0.5s;
+}
+
+.results[data-show='true'] {
+	opacity: 1;
+	z-index: 1;
+}
+
+.results[data-show='false'] {
+	opacity: 0;
+	z-index: -1;
+}
+
+.wrapper {
+	background: var(--white);
+	padding: 40px;
+	border-radius: 12px;
+	text-align: center;
+}
